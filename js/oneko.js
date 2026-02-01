@@ -72,7 +72,7 @@ function oneko() {
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
     nekoEl.style.zIndex = "9999";
-    nekoEl.style.backgroundImage = "url('../images/oneko.gif')";
+    nekoEl.style.backgroundImage = "url('images/oneko.gif')";
 
 
     nekoEl.style.imageRendering = "pixelated";
@@ -80,7 +80,7 @@ function oneko() {
     nekoEl.style.top = "32px";
 
     const img = new Image();
-    img.src = "../images/oneko.gif";
+    img.src = "images/oneko.gif";
     img.onload = function() {
         console.log("Image loaded successfully");
         document.body.appendChild(nekoEl);
