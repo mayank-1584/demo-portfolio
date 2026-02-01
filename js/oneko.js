@@ -197,3 +197,5 @@ function oneko() {
 if (!isReducedMotion) {
   oneko();
 }
+nekoEl.style.zIndex = "9999";
+
