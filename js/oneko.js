@@ -71,13 +71,15 @@ function oneko() {
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
-    nekoEl.style.backgroundImage = "url('images/oneko.gif')";
+    nekoEl.style.backgroundImage = "url('../images/oneko.gif')";
+
+
     nekoEl.style.imageRendering = "pixelated";
     nekoEl.style.left = "32px";
     nekoEl.style.top = "32px";
 
     const img = new Image();
-    img.src = 'images/oneko.gif';
+    img.src = "../images/oneko.gif";
     img.onload = function() {
         console.log("Image loaded successfully");
         document.body.appendChild(nekoEl);
