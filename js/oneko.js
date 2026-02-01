@@ -71,6 +71,7 @@ function oneko() {
     nekoEl.style.width = "32px";
     nekoEl.style.height = "32px";
     nekoEl.style.position = "fixed";
+    nekoEl.style.zIndex = "9999";
     nekoEl.style.backgroundImage = "url('../images/oneko.gif')";
 
 
@@ -197,5 +198,5 @@ function oneko() {
 if (!isReducedMotion) {
   oneko();
 }
-nekoEl.style.zIndex = "9999";
+
 
