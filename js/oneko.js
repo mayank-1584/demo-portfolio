@@ -93,6 +93,18 @@ function oneko() {
       mousePosX = event.clientX;
       mousePosY = event.clientY;
     };
+    document.addEventListener("mousemove", (event) => {
+    mousePosX = event.clientX;
+    mousePosY = event.clientY;
+    });
+
+   document.addEventListener("touchmove", (event) => {
+   const touch = event.touches[0];
+   mousePosX = touch.clientX;
+   mousePosY = touch.clientY;
+   });
+
+    nekoEl.style.pointerEvents = "none";
 
     window.onekoInterval = setInterval(frame, 100);
   }
